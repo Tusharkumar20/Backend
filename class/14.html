@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+         margin: 10pxl;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: auto;
+        
+        
+       }
+    </style>
+</head>
+<body>
+    <form action="/submit-booking" method="POST">
+  <h2 >Contact & Booking Form</h2>
+
+  <!-- Name Fields -->
+  <label for="firstName" style="padding: 25px;">First Name:</label>
+  <input type="text" id="firstName" name="firstName" required>
+  <br>
+
+  <label for="lastName" style="padding: 25px;">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" required>
+        <br>
+  <!-- Phone Number -->
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" pattern="\d{10}" maxlength="10" required>
+  <small>Enter a 10-digit number</small>
+
+  <!-- Booking Date and Time -->
+  <fieldset>
+    <legend>Booking Date & Time</legend>
+
+    <label for="day">Day:</label>
+    <input type="number" id="day" name="day" min="1" max="31" required>
+
+    <label for="month">Month:</label>
+    <select id="month" name="month" required>
+      <option value="">--Select--</option>
+      <option value="January">January</option>
+      <option value="February">February</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+    </select>
+
+    <label for="year">Year:</label>
+    <input type="number" id="year" name="year" min="2025" required>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required>
+  </fieldset>
+
+  <!-- Seating Preference -->
+  <fieldset>
+    <legend>Seating Preference</legend>
+    <label><input type="radio" name="seating" value="Indoor" required> Indoor</label>
+    <label><input type="radio" name="seating" value="Outdoor"> Outdoor</label>
+  </fieldset>
+  <br>
+
+  <!-- Additional Requests -->
+  <label for="requests">Additional Requests:</label>
+  <textarea id="requests" name="requests" rows="4" cols="50">Add a addtional request</textarea>
+  <br>
+  <!-- Newsletter Subscription -->
+  <label>
+    <input type="checkbox" name="subscribe" value="yes">
+    Subscribe to our newsletter
+  </label>
+
+  <!-- Submit Button -->
+  <button type="submit">Book Now</button>
+</form>
+</body>
+</html>

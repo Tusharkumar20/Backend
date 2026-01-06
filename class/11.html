@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ 
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(159, 49, 49);
+        }
+    </style>
+</head>
+<body>
+    <div style="display: grid; grid-template-areas:
+        'header header header'
+        'menu main ad1'
+        'ad2 main ad1'
+        'footer footer footer';
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto 1fr 1fr auto;
+        gap: 10px; min-height: 80vh;">
+        <div style="grid-area: header; background: #4167f1; padding: 20px; margin: 5px;text-align: center;">Header</div>
+        <div style="grid-area: menu; background: #638ab3; padding: 100px;text-align: center;">Menu</div>
+        <div style="grid-area: main; background: #7c94d3; padding-top: 200px; text-align: center;">Main</div>
+        <div style="grid-area: ad1; background: #7e9ed8; padding-top: 200px;text-align: center;">Ad1</div>
+        <div style="grid-area: ad2; background: #757fb7; padding-top: 100px; text-align: center ;">Ad2</div>
+        <div style="grid-area: footer; background: #2560d6; padding: 20px;text-align: center;">Footer</div>
+    </div>
+</body>
+</html>8z 

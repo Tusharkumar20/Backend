@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <h1><u>Tags </u></h1>
+    <h2><u>Forms and input tags</u></h2>
+
+    <form action="">
+        <div>
+            <label for="Fullname">Fullname:</label>
+            <input type="text" id="Fullname" name="Fullname" placeholder="Enter my name">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password ">
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" id ="subscribe" value="yes">
+            <label for="subscribe">Subscribe </label>
+        </div>
+        <div>
+            <label for="comment"></label>
+            <label for="comment">comment:</label>
+            <br>
+            <textarea name="comment" id="comment"></textarea>
+        </div>
+        <div>
+            <label for="fruits">Fruits:</label>
+            <select name="furits" id="fruits">
+                <option value="apple">apple</option>
+                <option value="banana">banana</option>
+                <option value="mango">mango</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

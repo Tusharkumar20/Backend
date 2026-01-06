@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS selector</title>
+    <style>
+        /*class selector */
+        .red{
+            background-color: lightblue;
+        }
+        /*id selector*/
+        #green{
+            background-color: green;
+        }
+        /*chlid selector*/
+       
+        div > p~h1{
+            color: red;
+            font-size: 20px;
+        }
+        /*descendant selector*/
+        div p{
+            color: red;
+            font-size: 20px;
+        }
+        /*universal selector*/
+        *{
+            margin: 0;
+            padding: 1px;
+        }
+        /* Pseudo selector */
+        a:link{
+            color: black;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: red;
+        }
+        
+        a:active{
+            background-color: blue;
+        }   
+        .box{
+            background-color: springgreen; 
+        }
+        .box1{
+            color: white;
+            background-color: rosybrown;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid rgb(228, 37, 212);
+            height: 100px;
+            box-sizing: border-box;
+        } 
+        .box2{
+            color: teal;
+            margin: 5px;
+            padding: 10px;
+            border: 2px solid rgb(223, 37, 212);
+            height: 100px;
+        }
+
+
+
+            
+    </style>
+</head>
+<body>
+    <div id ="green ">
+        I am a div element.
+        <p>hello</p>
+        <p>heloo1</p>
+        <h1>hwllo</h1>
+        <div><h1>he</h1></div>
+        <p>hello2</p>
+    </div>
+    <div class ="red ">
+        i am another div.
+        <p>hello</p>    
+    </div>
+    <a target="_blank" href="https:/www.google.com">Go to Google</a>
+    <a target="_blank" href="https:/www.facebook.com">Go to Facebook</a>
+    <a target="_blank" href="https:/www.youtube.com">go to youtube</a>
+    <div class="box box1">this is a box</div>
+    <div class="box box2">this is another box</div>
+</body>
+</html>
